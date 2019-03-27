@@ -29,6 +29,10 @@ extern char *optarg;
 #ifdef HAVE_SYS_SYSMACROS_H
 #include <sys/sysmacros.h>
 #endif
+#ifdef __sun
+#include <sys/types.h>
+#include <sys/mkdev.h>
+#endif
 
 #include "debugfs.h"
 #include "uuid/uuid.h"

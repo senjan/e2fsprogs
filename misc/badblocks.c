@@ -369,7 +369,9 @@ static int do_read (int dev, unsigned char * buffer, int try, int block_size,
 {
 	long got;
 	struct timeval tv1, tv2;
+#ifndef NANOSEC
 #define NANOSEC (1000000000L)
+#endif
 #define MILISEC (1000L)
 
 #if 0

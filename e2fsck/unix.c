@@ -288,7 +288,7 @@ static int is_on_batt(void)
 {
 	FILE	*f;
 	DIR	*d;
-	char	tmp[80], tmp2[80], fname[NAME_MAX+30];
+	char	tmp[80], tmp2[80], fname[MAXNAMLEN+30];
 	unsigned int	acflag;
 	struct dirent*	de;
 
